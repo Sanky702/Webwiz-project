@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candleaf</title>
+</head>
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: white;
+        font-size: medium;
+    }
+
+    .left {
+        display: inline-block;
+        border: 2px solid red;
+        left: 40.43px;
+        top: 8.21px;
+    }
+
+    .left img {
+        position: absolute;
+        width: 40.61px;
+        height: 39.61px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .left div {
+        position: absolute;
+        width: 85.25px;
+        height: 14.61px;
+        left: 40.43px;
+        top: 8.21px;
+        color: green;
+
+    }
+
+    .mid {
+        display: block;
+        /* border: 2px solid rgb(82, 82, 192); */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        /* font-weight: 500; */
+        line-height: 19px;
+        text-align: center;
+        word-spacing: 15px;
+        color: black;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .right {
+        position: absolute;
+        width:1390px;
+        left: 1344.25px;
+        right: 225px;
+        top: 13px;
+        color: rgba(40, 83, 60, 0.2) ;
+        /* bottom: 12.5%; */
+
+    }
+
+    .responsive {
+        width: 2%;
+        height: 25.5px;
+        background-color: rgb(90, 68, 68);
+        cursor: pointer;
+        position: relative;
+    }
+
+    .responsive:hover {
+        background-color: black;
+    }
+
+    .container {
+        position: absolute;
+        width: 800px;
+        height: 26px;
+        left: 165px;
+        top: 130px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        /* identical to box height, or 128% */
+
+        letter-spacing: -0.9px;
+        color: rgb(56, 39, 39);
+    }
+
+    .big {
+        width: 445px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 0.5px solid green;
+    }
+
+    .small {
+        width: 140px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 0.5px solid green;
+    }
+
+    .medium {
+        width: 216px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 0.5px solid green;
+    }
+
+    .checkbox {
+        width: 421px;
+        height: 23px;
+        left: 188px;
+        top: 218px;
+
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .submit {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 8px 44px;
+
+        position: absolute;
+        width: 222px;
+        height: 40px;
+        left: 217px;
+        top: 530px;
+        background: #56B280;
+        border-radius: 4px;
+    }
+
+    .submit:hover,
+    .submit:focus {
+        background-color: rgb(35, 134, 101);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .mint {
+        position: absolute;
+        width: 705px;
+        height: 820px;
+        left: 700px;
+        top: 55px;
+
+        background: #F2F2F2;
+    }
+
+    .glass img {
+        position: absolute;
+        width: 150px;
+        height: 120px;
+        left: 20px;
+        top: 2px;
+        mix-blend-mode: darken;
+        background: wheat;
+    }
+
+    #spice {
+        position: absolute;
+        width: 255px;
+        height: 37px;
+        left: 300px;
+        top: 17px;
+
+        font-family: Poppins;
+        font-style: normal;
+        display: flex;
+        font-weight: 300;
+    }
+
+    .dollar {
+        position: absolute;
+        width: 255px;
+        height: 59px;
+        left: 300px;
+        top: 70px;
+
+        font-family: Poppins;
+        color: #56B280;
+    }
+
+    hr {
+        position: absolute;
+        width: 410px;
+        height: 0px;
+        left: 65px;
+        top: 170px;
+        border: 1px solid rgba(40, 83, 60, 0.2);
+        transform: rotate(0.14deg);
+    }
+
+    #coupon {
+        position: absolute;
+    }
+
+    .coupon {
+        position: absolute;
+        width: 250px;
+        height: 40px;
+        left: 65px;
+
+        top: 200px;
+        background: #FFFFFF;
+        border: 0.5px solid #898989;
+        box-sizing: border-box;
+
+    }
+
+    .code {
+        position: absolute;
+        height: 40px;
+        width: 106px;
+        left: 325px;
+        top: 200px;
+        border-radius: 4px;
+        background-color: #898989;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    hr {
+        position: absolute;
+        width: 410px;
+        height: 0px;
+        left: 65px;
+        top: 270px;
+        border: 1px solid rgba(40, 83, 60, 0.2);
+        transform: rotate(0.14deg);
+    }
+
+    .table {
+        position: absolute;
+        width: 490px;
+        height: 26px;
+        left: 65px;
+        top: 326px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: dimgrey;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoy4KWxrzztgb_CG14IDS87wbGlBaSdrhNwA&usqp=CAU"
+                alt="">
+            <div>Candleaf</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#discovery">Discovery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEXk5ueutLeqsbTn6eqpr7PJzc/j5ebf4eLZ3N2wtrnBxsjN0NLGysy6v8HT1tissra8wMNxTKO9AAAFDklEQVR4nO2d3XqDIAxAlfivoO//tEOZWzvbVTEpic252W3PF0gAIcsyRVEURVEURVEURVEURVEURVEURVEURVEURVEURflgAFL/AirAqzXO9R7XNBVcy9TbuMHmxjN6lr92cNVVLKEurVfK/zCORVvW8iUBnC02dj+Wpu0z0Y6QlaN5phcwZqjkOkK5HZyPAjkIjSO4fIdfcOwFKkJlX4zPu7Ha1tIcwR3wWxyFhRG6g4Je0YpSPDJCV8a2Sv2zd1O1x/2WMDZCwljH+clRrHfWCLGK8REMiql//2si5+DKWKcWeAGcFMzzNrXC/0TUwQ2s6+LhlcwjTMlYsUIQzPOCb7YBiyHopyLXIEKPEkI/TgeuiidK/R9FniUDOjRDpvm0RhqjMyyXNjDhCfIMYl1gGjIMIuYsnGEYRMRZOMMunaLVwpWRW008v6fYKDIzxCwVAeNSO90BJW6emelYBRF/kHpYGVaoxTDAaxOFsfP9y8hpJ4xd7gOcij7JNGQ1EYFgkPJa1jQEiYZXRaRINKxSDUW9n+FT82lSKadkiru9/4XPqSLWOekGPoY05TAvLm9orm+YWuwHoBHkZKijNBJGmeb61eL6Ff/6q7bLr7yvv3vKGhpDRjvgjGaPz+gUg6YgcvpyAR2FIZ9U6nEEyZRTovmEU32KichpGn7C17XrfyH9gK/c0CMP05HZIM2uf9sEveizKveBy9/6Qt7o89ne33D525cfcIMW6ab+TMEukQbQbu+xu7X3A9bChmWaCeAkG17bpntwXgWxHaMzGPmUaR5dQZiKqRVeUZ3047fi3nAu28h4CHxCsZAgmEH8Y27jJAhm8c+5RQzRQNVGhVFSfxOYIjp/pP7RxzjevYXVGf4eLt+BJ1vCuLuLkrgABgCGXZ2wik5uty+oBvNirI6mkzhAf4Gsb58Hcm67Jzd+KwD10BYPLL3e0MjvKrgAULnOfveF/O4N2Xb9BZom3gJes3F9X5Zze8/6Yt09b4CrqsEjUv8oFBaR2rl+6CZr2xVrp24o/WitBKuGrrpl1+bFkmK2qXTON4VpbdfLa7o7y/WdLxG7lm2Lqh2clOwTegbvc/vj2U78CwhA87Bn8G5Nk3eOb0Nsr9flz3sG78UUtue4kpv1xvjg3TMay62BMlTlP+vrOMnJsRmt/ze0jsfkPPYdAH57hK+34PeOyc8XIXu5xT2HsUkdZz+adwg8HGFfQ3K5jtDvbUiO4Di9/ywHGrL88pDizZ++oTp+an+SMX/ndymUCwmHMdO7yuOx83pUx/eEMU0AvxWndwgidAqOZ8ypCwdEfvvEo6D9HwpA8wzvmOJEqAg9ySu8g4x0Hb9hSB/BANEKJ+LbPBU0lzbAJs4xt1AoshKkUGQmiH8/jJ0gdhTTLmSegHlPE0oOdXALnqDjKYh3px//fSgSWG8UqfrrIICzYYSJXRr9BSPbpNzw7gBjKjKOYI7ReIGqQRIap5+5MdjyvuDkExvGeXSlONWZAP3/AZBwJohU7QJRGU+cTVH18ELmRPNBmibW6MT/k1b0XhdkRBvyT6SB6EYv/GvhSmRNpGngRULsAlxMCGNXp7w3FfdEbTEEDdLI9TdIKRUzUesa3I461ER8cpNT7gMRhpKmYVS9ELOgCUQsa4SsulciKiLbY+AnHD8cpuhISsnxpamI84sbDq9qYJgf8wiiOBrC7Ml7M7ZECCqKoiiKoiiKoiiKoijv5AvJxlZRyNWWLwAAAABJRU5ErkJggg=="
+                alt="profile" class="responsive">
+
+        </div>
+    </header>
+    <div class="container">
+        <h3>Contact</h3>
+
+        <form action="no action.php">
+            <div class="form">
+                <input type="text" class="big" name="" placeholder="Email or mobile phone number">
+            </div>
+            <div>
+                <input type="checkbox" name="" id="discount">Add me to Candleaf newsletter for a 10% discount
+            </div>
+        </form>
+        <br><br>
+        <div>
+            <h3>Shipping Address</h3>
+        </div>
+        <form action="no action.php">
+            <div class="form">
+                <input type="text" class="medium" name="" placeholder="Name"> <input type="text" class="medium" name=""
+                    placeholder="Second name">
+            </div>
+            <div>
+                <input type="tel" class="big" name="" placeholder="Address and Number">
+            </div>
+            <input type="" name="" class="big" placeholder="Shipping note">
+            <br>
+            <input type="text" name="" placeholder="City" class="small"> <input type="" placeholder="Postal code"
+                class="small"> <select name="province" id="prov" class="small">
+                <option value="province">province</option>
+            </select> <br>
+            <select name="country" id="country" class="big">
+                <option value="italy">italy</option>
+                <option value="india">india</option>
+            </select>
+            <div>
+                <input type="checkbox" id="">Save this informations for a future fast checkout
+            </div>
+            <div>
+                <button type="submit" class="submit">Go to shipping</button>
+            </div>
+        </form>
+        <div class="mint">
+            <div class="glass img">
+                <img src="Mint.png" alt="Mint">
+            </div>
+            <div id="spice">Spiced Mint Candleaf&#174</div>
+
+            <p class="dollar">&dollar;9.99</p>
+            <hr size="2px">
+            <div id="coupon">
+                <input type="tel" class="coupon" placeholder="Coupon code">
+                <button class="code">Add Code</button>
+            </div>
+            <table class="table">
+                <tr>
+                    <th> Subtotal </th>
+                    &nbsp;
+                    <th>&dollar; 9.99</th>
+                </tr><br>
+                <tr>
+                    <th> Shiping </th>&nbsp;
+                    <th>Calculated at the next door</th>
+                </tr><br><br>
+                <tr>
+                    <th> Total </th>
+                    <th>&dollar; 9.99</th>
+                </tr>
+            </table>
+        </div>
+</body>
+
+</html>
